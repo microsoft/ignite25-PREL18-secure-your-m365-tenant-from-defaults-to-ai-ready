@@ -1,0 +1,99 @@
+# This workflow automatically adds new issues to the Ignite GitHub Project
+# and applies appropriate labels based on issue content.
+#
+# To configure this workflow:
+# 1. Update the project-url in the add-to-project job with your actual project ID
+# 2. Ensure the ADD_TO_PROJECT_PAT secret is configured with appropriate permissions
+# 3. Customize the labels applied in the label_issues job as needed
+#
+# Required secrets:
+# - ADD_TO_PROJECT_PAT: Personal Access Token with project and repository permissions
+#
+name: Add issues to project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      repository-projects: write
+    steps:
+      - name: Add to project
+        uses: actions/add-to-project@v1.0.2
+        with:
+          # Update the project-url to point to your specific Ignite GitHub Project
+          # Replace PROJECT_ID with the actual project ID from your GitHub organization
+          project-url: https://github.com/orgs/microsoft/projects/PROJECT_ID
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+
+  label_issues:
+    name: Label issues
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Label new issues
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue = context.payload.issue;
+            const labels = ['ignite-2025', 'needs-triage'];
+            
+            // Add default labels to new issues
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: labels
+            });
+            
+            // Add additional labels based on issue content
+            const title = issue.title.toLowerCase();
+            const body = issue.body?.toLowerCase() || '';
+            
+            // Label based on keywords in title or body
+            if (title.includes('bug') || title.includes('error') || title.includes('issue')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['bug']
+              });
+            }
+            
+            if (title.includes('feature') || title.includes('enhancement') || title.includes('request')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['enhancement']
+              });
+            }
+            
+            if (title.includes('docs') || title.includes('documentation') || body.includes('documentation')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['documentation']
+              });
+            }
+            
+            if (title.includes('security') || body.includes('security') || body.includes('vulnerability')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['security']
+              });
+            }
+            
+            console.log(`Added labels to issue #${issue.number}: ${issue.title}`);
