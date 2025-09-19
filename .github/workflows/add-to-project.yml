@@ -1,0 +1,37 @@
+name: "Add new issues to Ignite GH Project"
+
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  add-to-project:
+    name: Add Issue to Project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add to Project
+        uses: actions/add-to-project@v0.6.0
+        with:
+          project-url: ${{ secrets.GH_PROJECT_URL }}
+          github-token: ${{ secrets.ADD_TO_PROJECT }}
+
+  label_issues:
+    name: Label Issues
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label Issue
+        shell: bash
+        run: |
+          if [ -n "${{ secrets.ISSUE_LABEL }}" ]; then
+            curl -X POST \
+              -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/labels" \
+              -d '["${{ secrets.ISSUE_LABEL }}"]'
+          fi
