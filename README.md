@@ -69,7 +69,8 @@ Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lb
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: Secure Your M365 Tenant From Defaults to AI-Ready
+## 🔥PREL18:Copilot Ready: Strategy,
+Data, and Security
 
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
@@ -88,9 +89,10 @@ By the end of this session, learners will be able to:
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. Purview
+2. Copilot
+3. SAM
+4. DSPM for AI 
 
 ### 🌟 Microsoft Learn MCP Server
 
@@ -119,10 +121,10 @@ For more information, setup instructions for other dev clients, and to post comm
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/brwoff">
+        <img src="https://github.com/brwoff" width="100px;" alt="Bryan Wofford"
 "/><br />
-        <sub><b> INSERT NAME HERE
+        <sub><b> Bryan Wofford
 </b></sub></a><br />
             <a href="https://github.com/mikekinsman" title="talk">📢</a> 
     </td>
