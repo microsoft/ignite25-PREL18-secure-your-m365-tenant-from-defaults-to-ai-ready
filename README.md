@@ -122,18 +122,9 @@ For more information, setup instructions for other dev clients, and to post comm
 <table>
 <tr>
     <td align="center"><a href="http://github.com/brwoff">
-        <img src="https://github.com/brwoff" width="100px;" alt="Bryan Wofford"
+        <img src="https://github.com/brwoff.png" width="100px;" alt="Bryan Wofford"
 "/><br />
         <sub><b> Bryan Wofford
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
-    </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
-"/><br />
-        <sub><b>INSERT NAME HERE
-</b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
     </td>
 </tr></table>
 
