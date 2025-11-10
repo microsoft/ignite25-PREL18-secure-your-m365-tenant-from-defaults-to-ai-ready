@@ -14,14 +14,6 @@ Data, and Security
 
 This session offers a hands-on approach to improving the security of your Microsoft 365 tenant. Whether you're integrating Copilot and AI or simply strengthening your environment, we’ll guide you through identifying insecure defaults, applying security baselines, and using data labeling strategies. By the end, you'll have the knowledge to build a hardened, AI-ready tenant and the confidence to maintain it.
 
-### 🧠 Learning Outcomes
-
-By the end of this session, learners will be able to:
-
--  
--
--
-
 ### 💻 Technologies Used
 
 1. Purview
