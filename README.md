@@ -21,39 +21,33 @@ This session offers a hands-on approach to improving the security of your Micros
 3. SAM
 4. DSPM for AI 
 
-### 🌟 Microsoft Learn MCP Server
-
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Docs_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft.docs.mcp&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-The Microsoft Learn MCP Server is a remote MCP Server that enables clients like GitHub Copilot and other AI agents to bring trusted and up-to-date information directly from Microsoft's official documentation. Get started by using the one-click button above for VSCode or access the [mcp.json](.vscode/mcp.json) file included in this repo.
-
-For more information, setup instructions for other dev clients, and to post comments and questions, visit our Learn MCP Server GitHub repo at [https://github.com/MicrosoftDocs/MCP](https://github.com/MicrosoftDocs/MCP). Find other MCP Servers to connect your agent to at [https://mcp.azure.com](https://mcp.azure.com).
-
-*Note: When you use the Learn MCP Server, you agree with [Microsoft Learn](https://learn.microsoft.com/en-us/legal/termsofuse) and [Microsoft API Terms](https://learn.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) of Use.*
 
 ### 📚 Resources and Next Steps
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
+| Presentation | [https://aka.ms/AAydi00] | deck used during session |
 | Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for Ignite 2025 Sessions |
 | Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)| Connect with the Azure AI Foundry Community! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
 
-## Content Owners
+## Speakers
 
 <!-- TODO: Add yourself as a content owner
 1. Change the src in the image tag to {your github url}.png
 2. Change INSERT NAME HERE to your name
 3. Change the github url in the final href to your url. -->
 
-<table>
-<tr>
-    <td align="center"><a href="http://github.com/brwoff">
-        <img src="https://github.com/brwoff.png" width="100px;" alt="Bryan Wofford"
-"/><br />
-        <sub><b> Bryan Wofford
-    </td>
-</tr></table>
+
+| Speakers             | LinkedIn URL                          |
+|-------------------|---------------------------------------|
+| Bryan Wofford     | [LinkedIn](https://www.linkedin.com/in/bryanwofford) |
+| Pallavi Dua       | [LinkedIn](https://www.linkedin.com/in/pallavi-dua-59aa6239/) |
+| Nikita Bandyopadhyay    | [LinkedIn](https://www.linkedin.com/in/nikitabandyopadhyay/) |
+| Erica Toelle    | [LinkedIn](https://www.linkedin.com/in/ericatoelle/) |
+| Jim Banach     | [LinkedIn](https://www.linkedin.com/in/jrbanach/) |
+| Olga Gordon        | [LinkedIn](https://www.linkedin.com/in/olga-gordon-b1531118/) |
+
 
 
 ## Contributing
