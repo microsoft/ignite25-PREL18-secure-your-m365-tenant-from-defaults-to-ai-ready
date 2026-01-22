@@ -49,6 +49,9 @@ This session offers a hands-on approach to improving the security of your Micros
 | Olga Gordon        | [LinkedIn](https://www.linkedin.com/in/olga-gordon-b1531118/) |
 
 
+## 🚀 Try Azure for Free!
+
+Ready to build, experiment, or scale your next project? Kick things off with an Azure Free Trial and get access to popular services, generous monthly credits, and the tools you need to ship fast. 👉 Start your free journey here: https://aka.ms/devrelft
 
 ## Contributing
 
